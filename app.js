@@ -60,11 +60,14 @@ born in the 1500's.
   the years 1500 and 1599.
 */
 
-let veryOldInventors = []
+let veryOldInventors = inventors.filter(inventor => 
+     inventor.year >= 1500 && inventor.year <= 1599);
+
+
 
 // Complete the exercise in the space below:
 
-inventors.filter(inventors => inventors.year >= 1500 && 1599)
+
 
 
 // inventors to inventors and year greater or equal to 1500 and 1599
@@ -96,11 +99,9 @@ Hint: Return a new object literal from the callback that looks like:
       { first: "First Name", last: "Last Name" }
 */
 
-let inventorNames = []
+// let inventorNames = inventors.map(({last}))
 
 // Complete the exercise in the space below:
-
-inventors.map(inventors => inventors.first.last)
 
 
 // Check your work:
@@ -122,4 +123,3 @@ console.log(
     { first: 'Hanna', last: 'Hammarström' }
   ]
 )
-
