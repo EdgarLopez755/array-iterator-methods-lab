@@ -99,7 +99,13 @@ Hint: Return a new object literal from the callback that looks like:
       { first: "First Name", last: "Last Name" }
 */
 
-// let inventorNames = inventors.map(({last}))
+let inventorNames = inventors.map(inventor => ({
+    first: inventor.first,
+    last: inventor.last
+
+}));
+
+    
 
 // Complete the exercise in the space below:
 
