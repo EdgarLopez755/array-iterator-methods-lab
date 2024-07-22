@@ -44,6 +44,17 @@ const people = [
     { name: 'Matt', year: 1970 },
     { name: 'Wes', year: 2015 }
   ];
+
+
+
+  const comments = [
+    { text: 'Love this!', id: 523423 },
+    { text: 'Super good', id: 823423 },
+    { text: 'You are the best', id: 2039842 },
+    { text: 'Ramen is my fav food ever', id: 123523 },
+    { text: 'Nice Nice Nice!', id: 542328 }
+  ];
+  
   
   
 
@@ -315,4 +326,26 @@ let isEveryone19OrOlder = devs.every(devs => currentYear - devs.year >= 19)
 // Check your work:
 console.log('Exercise 7 my result: ', isEveryone19OrOlder)
 console.log('Exercise 7 correct result: ', false)
+
+
+
+
+/*
+Exercise 8: Array.prototype.find()
+
+Use Array.prototype.find() to identify and retrieve the comment object with 
+a specific ID 823423 from an array of comment objects.
+
+- Assign the found comment object to the variable 'commentById'.
+*/
+
+let commentById = comments.find(comments => comments.id === 823423)
+
+// Complete the exercise in the space below:
+
+
+
+// Check your work:
+console.log('Exercise 8 my result: ', commentById)
+console.log('Exercise 8 correct result: ', { text: 'Super good', id: 823423 })
 
